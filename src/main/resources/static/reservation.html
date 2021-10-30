@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jsReservation/guardar.js"></script>
+    <script src="jsReservation/listar.js"></script>
+    <script src="jsReservation/editar.js"></script>
+    <script src="jsReservation/borrar.js"></script>
+    
+    <title>Reservaciones</title>
+</head>
+
+<body>
+    <h1>SISTEMA ALQUILER DE COMPUTADORES</h1>
+    <h1>Agregar, Consultar, Actualizar o Borrar Reservaciones</h1>
+    <table border="2" cellspacing="2" cellpadding="2">
+      <tbody>
+        <tr><input type="hidden" id="numId"></tr>
+        <tr>
+          <td>Fecha Inicial</td>
+          <td><input type="text" id="startDate" placeholder="Fecha Inicial" size="80"></td>
+        </tr>
+        <tr>
+          <td>Fecha Devolucion</td>
+          <td><input type="text" id="devolutionDate" placeholder="Fecha Final" size="80"></td>
+        </tr>
+        <tr>
+          <td>Estado</td>
+          <td><input type="text" id="status" placeholder="Estado" size="80"></td>
+        </tr>
+      </tbody>
+    </table>
+    <tr>
+      <td>&nbsp;</td>
+      <button onclick="listarReservaciones()" id="btnListar">Consultar Reservaciones</button>
+        <button onclick="actualizarReservaciones()" id="btnActualizar">Actualizar lo Editado</button>
+        <button onclick="agregarReservaciones()" id="btnGuardar">Guardar Reservaciones</button>
+    </tr>
+    <br>
+    <hr><br>
+    <div id="listado"></div>
+
+    <h1>Volver al menu principal</h1>
+      <ul>
+        <li><a href="menuPrincipal.html">Menu Principal</a></li>
+        <br>
+        </li>
+      </ul>
+</body>
+
+</html>

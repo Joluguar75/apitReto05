@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensaje</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jsMessage/guardar.js"></script>
+    <script src="jsMessage/listar.js"></script>
+    <script src="jsMessage/editar.js"></script>
+    <script src="jsMessage/borrar.js"></script>
+    
+    <title>Mensaje</title>
+</head>
+
+<body>
+    <h1>SISTEMA ALQUILER DE COMPUTADORES</h1>
+    <h1>Agregar, Consultar, Actualizar o Borrar Mensajes</h1>
+    <table border="2" cellspacing="2" cellpadding="2">
+      <tbody>
+        <tr><input type="hidden" id="numId"></tr>
+        <tr>
+          <td>Mensaje</td>
+          <td><input type="text" id="messageText" placeholder="Mensaje" size="80"maxlength="250"></td>
+        </tr>
+      </tbody>
+    </table>
+    <tr>
+      <td>&nbsp;</td>
+      <button onclick="listarMensaje()" id="btnListar">Consultar Mensajes</button>
+        <button onclick="actualizarMensaje()" id="btnActualizar">Actualizar lo Editado</button>
+        <button onclick="agregarMensaje()" id="btnGuardar">Guardar Mensaje</button>
+    </tr>
+    <br>
+    <hr><br>
+    <div id="listado"></div>
+
+    <h1>Volver al menu principal</h1>
+      <ul>
+        <li><a href="menuPrincipal.html">Menu Principal</a></li>
+        <br>
+        </li>
+      </ul>
+</body>
+
+</html>
